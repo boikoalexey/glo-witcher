@@ -177,7 +177,7 @@ body {
 .arrow {
     position: absolute;
     z-index: 2;
-    top: 45%;
+    top: 30%;
     right: 0;
 
     width: 32px;
