@@ -1,0 +1,208 @@
+@font-face {
+    font-family: "MasonChronicles";
+    src: url("../fonts/masonchronicles.eot"); /* IE9 Compat Modes */
+    src:
+        url("../fonts/masonchronicles.otf") format("opentype"), /* Open Type Font */
+        url("../fonts/masonchronicles.svg") format("svg"), /* Legacy iOS */
+        url("../fonts/masonchronicles.ttf") format("truetype"), /* Safari, Android, iOS */
+        url("../fonts/masonchronicles.woff") format("woff"), /* Modern Browsers */
+        url("../fonts/masonchronicles.woff2") format("woff2"); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --primary: #9D2929;
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 0 50px;
+
+    background-color: #141218;
+    background-image: url("../public/background.jpg");
+    background-position: top right 20%;
+    background-repeat: no-repeat;
+
+    color: #FFF;
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+/*Header*/
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-top: 60px;
+}
+.menu-list {
+    margin-left: 67px;
+    margin-right: auto;
+}
+.menu-link {
+    margin-right: 24px;
+
+    color: #FFF;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+}
+.social-link {
+    margin-left: 20px;
+}
+
+/*Main*/
+
+.main-content {
+    display: flex;
+    align-items: center;
+    margin: 90px 0 85px;
+}
+.rating {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+
+    margin-top: 16px;
+}
+.rating-number {
+    font-size: 12px;
+}
+.main-title {
+    margin-top: 10px;
+
+    font-family: "MasonChronicles", serif;
+    font-size: 76px;
+    line-height: 150%;
+}
+.main-description {
+    max-width: 458px;
+    margin-top: 10px;
+
+    line-height: 150%;
+}
+.button {
+    margin-top: 40px;
+    padding: 22px 72px;
+
+    border-radius: 8px;
+    border: none;
+
+    background: var(--primary);
+    color: #FFF;
+}
+.play {
+    margin: auto;
+
+    background-color: var(--primary);
+    border-radius: 50%;
+    border: none;
+    width: 100px;
+    height: 100px;
+}
+.play-img {
+    transform: translate(-22px, -17px);
+}
+/*Slider*/
+.series {
+    position: relative;
+    max-width: 420px;
+
+    display: flex;
+    align-items: center;
+}
+.swiper {
+    max-width: 420px;
+    margin-left: 0;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    width: 164px;
+    height: 113px;
+
+    padding: 13px;
+
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.card-subtitle {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 10px;
+}
+.card-1 {
+    background: url("../public/cards/seria1-min.jpg");
+}
+.card-2 {
+    background: url("../public/cards/seria2-min.jpg");
+}
+.card-3 {
+    background: url("../public/cards/seria3-min.jpg");
+}
+.card-4 {
+    background: url("../public/cards/seria4-min.jpg");
+}
+.card-5 {
+    background: url("../public/cards/seria5-min.jpg");
+}
+.card-6 {
+    background: url("../public/cards/seria6-min.jpg");
+}
+.card-7 {
+    background: url("../public/cards/seria7-min.jpg");
+}
+.card-8 {
+    background: url("../public/cards/seria8-min.jpg");
+}
+.arrow {
+    position: absolute;
+    z-index: 2;
+    top: 45%;
+    right: 0;
+
+    width: 32px;
+    height: 23px;
+    border: none;
+    background: url("../public/arrow.svg") no-repeat center transparent;
+}
+
+/*Footer*/
+
+.footer {
+    margin-top: auto;
+    padding: 20px 0;
+    background-color: #141218;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+.copyright {
+    color: rgba(255, 255, 255, .3);
+}
+.footer-menu {
+    display: flex;
+    gap: 25px;
+}
+.footer-link {
+    color: rgba(255, 255, 255, .3);
+    text-decoration: none;
+}
+
+
