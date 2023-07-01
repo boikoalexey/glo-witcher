@@ -19,8 +19,6 @@ body {
     flex-direction: column;
     justify-content: space-between;
 
-    padding: 0 50px;
-
     background-color: #141218;
     background-image: url("../public/background.jpg");
     background-position: top right 20%;
@@ -33,6 +31,7 @@ body {
     font-size: 14px;
 }
 .container {
+    width: 90%;
     max-width: 1140px;
     margin: auto;
 }
@@ -60,6 +59,9 @@ body {
 }
 .social-link {
     margin-left: 20px;
+}
+.menu-button {
+    display: none;
 }
 
 /*Main*/
@@ -117,10 +119,12 @@ body {
 /*Slider*/
 .series {
     position: relative;
-    max-width: 420px;
 
     display: flex;
     align-items: center;
+
+    max-width: 420px;
+    padding-bottom: 50px;
 }
 .swiper {
     max-width: 420px;
@@ -203,6 +207,107 @@ body {
 .footer-link {
     color: rgba(255, 255, 255, .3);
     text-decoration: none;
+}
+
+/*Media*/
+
+@media (max-width: 760px) {
+    .play {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        display: none;
+        width: 250px;
+        height: 263px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 30px;
+        padding-top: 30px;
+        background-color: var(--primary);
+    }
+    .header-active {
+        display: flex;
+    }
+    .menu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin: 0 auto 40px;
+        order: 2;
+    }
+    .menu-link {
+        margin: auto;
+    }
+    .social {
+        display: flex;
+        gap: 16px;
+        order: 1;
+    }
+    .social-link {
+        margin: auto;
+    }
+    .menu-button {
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 40px;
+        width: 30px;
+        height: 2px;
+        background-color: #FFF;
+    }
+    .menu-button:before {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #FFF;
+        margin-top: -7px;
+        transition: transform 0.2s;
+    }
+    .menu-button:after {
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 30px;
+        height: 2px;
+        background-color: #FFF;
+        margin-top: 7px;
+        transition: transform 0.2s;
+    }
+    .menu-button-active {
+        height: 0;
+    }
+    .menu-button-active:after {
+        margin-top: 0;
+        transform: rotate(45deg);
+    }
+    .menu-button-active:before {
+        margin-top: 0;
+        transform: rotate(-45deg);
+    }
+    .main-content {
+        padding-top: 100px;
+    }
+    .main-title {
+        font-size: 56px;
+    }
+    .series {
+        max-width: 220px;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 12px;
+    }
 }
 
 
